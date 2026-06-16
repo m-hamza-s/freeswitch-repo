@@ -14,3 +14,8 @@ This setup was successfully verified using the following loopback route:
 2. Dialed the global echo extension **9196**.
 3. Confirmed proper audio stream negotiation (RTP) and zero-loss playback.
 
+### Multi-User Call Verification
+* **Extension 1000**: Provisioned and registered via SIP softphone.
+* **Extension 1001**: Provisioned and registered via secondary endpoint.
+* **Result**: Confirmed successful dialing from 1000 -> 1001 with clean bridge execution and active bidirectional audio streaming.
+
