@@ -1,0 +1,4 @@
+directory/
+tls/
+*.pem
+*.key

@@ -1,0 +1,9 @@
+<include>
+  <context name="default">
+    <extension name="Local-Extensions">
+      <condition field="destination_number" expression="^(100[0-9])$">
+        <action application="bridge" data="user/$1"/>
+      </condition>
+    </extension>
+  </context>
+</include>

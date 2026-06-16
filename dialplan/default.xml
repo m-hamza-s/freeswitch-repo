@@ -1,0 +1,19 @@
+<include>
+  <!-- Catch-all routing for extensions dialed locally -->
+  <context name="default">
+    <extension name="Local-Extensions">
+      <condition field="destination_number" expression="^(100[0-9])$">
+        <action application="bridge" data="user/$1@10.0.0.31"/>
+      </condition>
+    </extension>
+  </context>
+
+  <!-- Catch-all routing for incoming network requests -->
+  <context name="public">
+    <extension name="Public-Extensions">
+      <condition field="destination_number" expression="^(100[0-9])$">
+        <action application="bridge" data="user/$1@10.0.0.31"/>
+      </condition>
+    </extension>
+  </context>
+</include>

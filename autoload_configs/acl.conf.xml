@@ -1,0 +1,12 @@
+<configuration name="acl.conf" description="Access Control Lists">
+  <network-lists>
+    <list name="domains" default="deny">
+      <node type="allow" cidr="10.0.0.0/8"/>
+      <node type="allow" cidr="172.31.0.0/16"/>
+    </list>
+    <list name="rfc1918" default="deny">
+      <node type="allow" cidr="10.0.0.0/8"/>
+      <node type="allow" cidr="172.31.0.0/16"/>
+    </list>
+  </network-lists>
+</configuration>
